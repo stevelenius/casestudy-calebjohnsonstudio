@@ -122,8 +122,95 @@ h1 {
     text-transform: uppercase;
 }
 
+.carousel {
+    max-width: 867;
+    max-height: 482;
+}
+
+.gallery-group {
+    max-width: 867px;
+    max-height: 886px;
+    margin: 0 3px;
+}
+
+.gallery-group:after {
+    clear: both;
+}
 
 
+.tall-third {
+    display: block;
+    position: relative;
+    width: 33.33%;
+    height: 67%;
+    padding: .4%;
+    float: left;
+
+}
+
+.tall-third img {
+    height: 100%;
+    width: 100%;
+}
+
+.gallery-group .caption {
+    position: absolute;
+    top: 1.75em;
+    left: 1.4em;
+    width: 100%;
+    color: #000;
+    font-size: .8em;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: .2em;
+/*    visibility: hidden;*/    
+}
+
+
+.wide-two-thirds {
+    display: block;
+    position: relative;
+    width: 66.66%;
+    height: 33.33%;
+    padding: .4%;
+    float: left;
+}
+
+.wide-two-thirds img {
+    
+    width: 100%;
+    height: 100%;
+}
+
+.square-third {
+    display: block;
+    position: relative;
+    width: 33.33%;
+    height: 33.33%;
+    padding: .4%;
+    float: left;
+}
+
+.square-third img {
+    
+    width: 100%;
+    height: 100%;
+}
+.wide-half {
+    display: block;
+    position: relative;
+    width: 50%;
+    height: 33.33%;
+    padding: .4%;
+    float: left;
+}
+
+.wide-half img {
+    
+    width: 100%;
+    height: 100%;
+}
 
 
 
