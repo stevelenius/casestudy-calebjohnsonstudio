@@ -101,7 +101,8 @@ textarea {
 html {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300
+    font-weight: 300;
+    background-color: #fff;
 }
 
 *, *:before, *:after {
@@ -110,15 +111,79 @@ html {
 
 body {
     max-width: 996px;
-    margin: 30px auto 40px;
+    margin: 1.875rem auto 2.66rem;
 }
 
 strong {
     font-weight: 500;
 }
 
+.cjslogo {
+    display: block;
+    max-width: 266px;
+    margin: 0 6rem 0 2.4rem;
+    float: left;
+}
+
+.cjslogo img {
+    max-width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: .9rem;
+    letter-spacing: .2em;
+   
+    text-transform: uppercase;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a, .dropbtn {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover, .dropdown:hover .dropbtn {
+    border-bottom: 1px solid #222;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 100px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 .text {
-    padding: .5rem 10rem 3.5rem;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: .5rem 10% 3.5rem;
+
 }
 
 .text .down-arrow-text {
