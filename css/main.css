@@ -129,6 +129,10 @@ strong {
     max-width: 100%;
 }
 
+.top-nav {
+    position: relative;
+}
+
 .top-nav ul {
     list-style-type: none;
     margin: 0 0 20px 0;
@@ -150,9 +154,9 @@ strong {
     text-decoration: none;
 }
 
-.top-nav li a:hover, .dropdown:hover .dropbtn {
-    border-bottom: 1px solid #222;
-}
+/*.top-nav li a:hover, .dropdown:hover .dropbtn {
+    ;
+}*/
 
 .top-nav li.dropdown {
     display: inline-block;
@@ -172,12 +176,25 @@ strong {
     text-decoration: none;
     display: block;
     text-align: left;
-}
 
+}
 
 .top-nav .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.underline-from-center:before {
+    content: "";
+ 
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.underline-from-center:hover {
+ 
+        padding-bottom: .1rem;
+    border-bottom: 1px solid #222;
+}
+
 .text {
     max-width: 760px;
     margin: 0 auto;
@@ -223,34 +240,53 @@ strong {
     padding-top: .5rem;
 }
 
-.carousel {
-    position: relative;
-    max-width: 990px;
-    max-height: 550px;
+/* Slideshow container */
+.slideshow-container {
+  max-width: 990px;
+  position: relative;
     padding: 0 .8%;
 }
 
-.carousel img {
-    width: 100%;
-    height: 100%;
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
 
-.left-arrow-carousel {
-    position: absolute;
-    left: 1.5rem;
-    top: 50%;
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
     transform: translateY(-50%);
-    color: #fff;
-    font-size: 2em;
+  padding: 1.5rem;
+  color: white;
+  font-size: 2rem;
 }
 
-.right-arrow-carousel {
-    position: absolute;
-    right: 1.5rem;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #fff;
-    font-size: 2em;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.25s;
+  animation-name: fade;
+  animation-duration: 1.25s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
 }
 
 .gallery-group {
@@ -267,14 +303,18 @@ strong {
     position: absolute;
     top: 1.75em;
     left: 1.4em;
-    width: 100%;
     color: #000;
     font-size: .8em;
     font-weight: 300;
     text-transform: uppercase;
     color: #fff;
     letter-spacing: .2em;
-    visibility: hidden;    
+    z-index: 100;
+ visibility: hidden; 
+}
+
+.tall-third:hover .arrow-move {
+    transform: translateX(100px);
 }
 
 .tall-third {
@@ -283,14 +323,44 @@ strong {
     width: 33.33%;
     height: 66.66%;
     padding: .39%;
+              overflow: hidden;
+
     float: left;
 
+}
+
+.picture-frame {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 .tall-third img {
     height: 100%;
     width: 100%;
+
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
+
+  .tall-third:hover img {
+      transform: scale(1.02);
+
+    }
+
+    .tall-third:hover::after {
+position: absolute;
+top: 0;
+left: 0;
+z-index: 2;
+ background: linear-gradient(to top, transparent 0%, transparent 75%, #777 99%, #fff 100%);
+  height: 100%;
+  width: 100%;
+
+content: '';
+    }
+
 
 .tall-third:hover .caption {
     visibility: visible;
@@ -309,7 +379,28 @@ strong {
     
     width: 100%;
     height: 100%;
+
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
+
+  .wide-two-thirds:hover img {
+      transform: scale(1.02);
+
+    }
+
+    .wide-two-thirds:hover::after {
+position: absolute;
+top: 0;
+left: 0;
+z-index: 2;
+ background: linear-gradient(to top, transparent 0%, transparent 75%, #777 99%, #fff 100%);
+  height: 100%;
+  width: 100%;
+
+content: '';
+    }
 
 .wide-two-thirds:hover .caption {
     visibility: visible;
@@ -328,7 +419,28 @@ strong {
     
     width: 100%;
     height: 100%;
+
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
+
+  .square-third:hover img {
+      transform: scale(1.02);
+
+    }
+
+    .square-third:hover::after {
+position: absolute;
+top: 0;
+left: 0;
+z-index: 2;
+ background: linear-gradient(to top, transparent 0%, transparent 75%, #777 99%, #fff 100%);
+  height: 100%;
+  width: 100%;
+
+content: '';
+    }
 
 .square-third:hover .caption {
     visibility: visible;
@@ -346,7 +458,28 @@ strong {
 .wide-half img {
     width: 100%;
     height: 100%;
+
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
+
+  .wide-half:hover img {
+      transform: scale(1.02);
+
+    }
+
+    .wide-half:hover::after {
+position: absolute;
+top: 0;
+left: 0;
+z-index: 2;
+ background: linear-gradient(to top, transparent 0%, transparent 75%, #777 99%, #fff 100%);
+  height: 100%;
+  width: 100%;
+
+content: '';
+    }
 
 .wide-half:hover .caption {
     visibility: visible;
