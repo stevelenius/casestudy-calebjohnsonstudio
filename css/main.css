@@ -97,7 +97,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
 html {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -132,6 +131,8 @@ strong {
     max-width: 100%;
 }
 
+/* End top logo */
+
 
 /* Top nav */
 
@@ -148,7 +149,6 @@ strong {
 .top-nav li {
     padding: .5rem .25rem 0 .25rem;
     float: left;
-
 }
 
 .top-nav li a, .dropbtn {
@@ -216,10 +216,13 @@ strong {
     transform: scaleX(1);
 }
 
+/* End top nav */
+
 
 /* Image carousel section */
 
 /* Slideshow container */
+
 .slideshow-container {
     max-width: 990px;
     position: relative;
@@ -227,11 +230,13 @@ strong {
 }
 
 /* Hide the images by default */
+
 .mySlides {
     display: none;
 }
 
 /* Next & previous buttons */
+
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -244,11 +249,13 @@ strong {
 }
 
 /* Position the "next button" to the right */
+
 .next {
     right: 0;
 }
 
 /* Fading animation */
+
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.25s;
@@ -265,6 +272,8 @@ strong {
     from {opacity: .5} 
     to {opacity: 1}
 }
+
+/* End image carousel section */
 
 
 /* Introductory text section */
@@ -293,11 +302,11 @@ strong {
     color: #222;
 }
 
-  /*   y-transition: all 1s ease-in-out;*/
+/*   y-transition: all 1s ease-in-out;*/
+
 .down-arrow-text:hover {
     animation: ani 1s infinite;
 }
-
 
 @keyframes ani {
     0% {
@@ -310,6 +319,8 @@ strong {
         top: 0;
     }
 }
+
+/* End animated text down-arrow */
 
 
 /* Introductory text styling */
@@ -340,6 +351,8 @@ strong {
     line-height: 1.8;
     padding-top: .5rem;
 }
+
+/* End introductory text section */
 
 
 /* Gallery groups */
@@ -455,12 +468,12 @@ strong {
 
 /*Each container gets a slight gradient at top on hover */
 
-/*Each container's gradient is sized slightly differently */
+/*BUT -- Each container's gradient is sized slightly differently */
 
 .tall-third:hover::after {
     position: absolute;
     top: .58%;
-    left: .58%
+    left: 1.16%;
     z-index: 2;
     background-image: linear-gradient(to top, transparent 0%, transparent 85%, #888 100%);
     height: 98%;
@@ -473,7 +486,7 @@ strong {
 .wide-two-thirds:hover::after {
     position: absolute;
     top: 1.2%;
-    left: .58%
+    left: .58%;
     z-index: 2;
     background-image: linear-gradient(to top, transparent 0%, transparent 70%, #888 100%);
     height: 98%;
@@ -486,11 +499,11 @@ strong {
 .square-third:hover::after {
     position: absolute;
     top: 1.2%;
-    left: .58%
+    left: 1.16%;
     z-index: 2;
     background-image: linear-gradient(to top, transparent 0%, transparent 70%, #888 100%);
     height: 98%;
-    width: 97.8%;
+    width: 97.5%;
     display: block;
     overflow: hidden;
     content: '';
@@ -499,7 +512,7 @@ strong {
 .wide-half:hover::after {
     position: absolute;
     top: 1.2%;
-    left: .58%
+    left: .58%;
     z-index: 2;
     background-image: linear-gradient(to top, transparent 0%, transparent 70%, #888 100%);
     height: 98%;
@@ -537,196 +550,12 @@ strong {
     transform: translateX(5px);
 }
 
-/*
-.wide-two-thirds {
-    display: block;
-    position: relative;
-    width: 66.66%;
-    height: 33.33%;
-    padding: .39%;
-    float: left;
-}
-
-/*.wide-two-thirds img {
-    
-    width: 100%;
-    height: 100%;
-
-  -moz-transition: transform 0.3s;
-  -webkit-transition: transform 0.3s;
-  transition: transform 0.3s;
-}
+/* End portfolio section */
 
 
-/* Enlarge image slightly on hover */
-/*
-.wide-two-thirds:hover img {
-      transform: scale(1.02);
+/* Footer */
 
-    }
-
-
-/* Add slight gradient at top on hover */
-/*
-.wide-two-thirds:hover::after {
-    position: absolute;
-    top: 1.2%;
-    left: .58%
-    z-index: 2;
-    background-image: linear-gradient(to top, transparent 0%, transparent 70%, #888 100%);
-    height: 98%;
-    width: 98.8%;
-    display: block;
-    overflow: hidden;
-    content: '';
-}
-
-
-/* Make caption visible on hover */
-/*
-.wide-two-thirds:hover .caption {
-    visibility: visible;
-}
-
-
-/* Single animation for right arrow: moves to right on hover */
-/*
-.wide-two-thirds:hover .caption .arrow-move {
-    display: inline-block;
-     -moz-transition: transform .15s linear .15s;
-  -webkit-transition: transform .15s linear .15s;
-  transition: transform .15s linear .15s;
-       -moz-transform: translateX(5px);
-        -webkit-transform: translateX(5px);
-        transform: translateX(5px);
-    }
-
-
-.square-third {
-    display: block;
-    position: relative;
-    width: 33.33%;
-    height: 33.33%;
-    padding: .39%;
-    float: left;
-}
-
-/*.square-third img {
-    
-    width: 100%;
-    height: 100%;
-
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-
-/* Enlarge image slightly on hover */
-/*
-.square-third:hover img {
-      transform: scale(1.02);
-
-    }
-
-
-/* Add slight gradient at top on hover */
-/*
-.square-third:hover::after {
-    position: absolute;
-    top: 1.2%;
-    left: .58%
-    z-index: 2;
-    background-image: linear-gradient(to top, transparent 0%, transparent 70%, #888 100%);
-    height: 98%;
-    width: 97.8%;
-    display: block;
-    overflow: hidden;
-    content: '';
-}
-
-
-/* Make caption visible on hover */
-/*
-.square-third:hover .caption {
-    visibility: visible;
-}
-
-
-/* Single animation for right arrow: moves to right on hover */
-/*
-.square-third:hover .caption .arrow-move {
-    display: inline-block;
-     -moz-transition: transform .15s linear .15s;
-  -webkit-transition: transform .15s linear .15s;
-  transition: transform .15s linear .15s;
-       -moz-transform: translateX(5px);
-        -webkit-transform: translateX(5px);
-        transform: translateX(5px);
-    }
-
-
-.wide-half {
-    display: block;
-    position: relative;
-    width: 50%;
-    height: 33.33%;
-    padding: .39%;
-    float: left;
-}
-
-/*.wide-half img {
-    width: 100%;
-    height: 100%;
-
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-
-/* Enlarge image slightly on hover */
-/*
-.wide-half:hover img {
-    transform: scale(1.02);
-}
-
-
-/* Add slight gradient at top on hover */
-/*
-.wide-half:hover::after {
-    position: absolute;
-    top: 1.2%;
-    left: .58%
-    z-index: 2;
-    background-image: linear-gradient(to top, transparent 0%, transparent 70%, #888 100%);
-    height: 98%;
-    width: 98.5%;
-    display: block;
-    overflow: hidden;
-    content: '';
-}
-
-
-/* Make caption visible on hover */
-/*
-.wide-half:hover .caption {
-    visibility: visible;
-}
-
-
-/* Single animation for right arrow: moves to right on hover */
-/*
-.wide-half:hover .caption .arrow-move {
-    display: inline-block;
-    -moz-transition: transform .15s linear .15s;
-    -webkit-transition: transform .15s linear .15s;
-    transition: transform .15s linear .15s;
-    -moz-transform: translateX(5px);
-    -webkit-transform: translateX(5px);
-    transform: translateX(5px);
-}
-*/
+/* Bottom navigation with hover effects */
 
 .bottom-nav {
     width: 50%;
@@ -737,7 +566,6 @@ strong {
     padding-top: 1rem;
     float: left;
 }
-
 
 .bottom-nav a {
     color: #222;
@@ -753,15 +581,14 @@ strong {
     border-bottom: 1px solid #222;
 }
 
-.bottom-nav-1 {
-    float: left;
-    padding-left: 1.5rem;
-}
-
+.bottom-nav-1,
 .bottom-nav-2 {
     float: left;
     padding-left: 1.5rem;
 }
+
+
+/* Footer contact info with hover effects*/
 
 .footer-contact {
     width: 50%;
@@ -788,6 +615,9 @@ strong {
     border-bottom: 1px solid #222;
 }
 
+
+/* Footer social media link icons with transitions on hover */
+
 .social {
     width: 50%;
     padding: 1.25rem 0 0 4rem;
@@ -806,7 +636,6 @@ strong {
 .social h5 .underline-thick {
     padding-bottom: .45rem;
     border-bottom: 2px solid #222;
-
 }
 
 .social-icon {
@@ -835,12 +664,18 @@ strong {
    filter: opacity(40%)
 }
 
+
+/* Footer copyright line */
+
 .copyright {
     font-size: .6em;
     text-transform: uppercase;
     letter-spacing: .2em;
     padding-top: 2.5rem;
 }
+
+
+/* Logos of related companies and links to their sites */
 
 .company-links {
     width: 50%;
@@ -851,12 +686,6 @@ strong {
 .company-links p {
     padding-bottom: 1rem;
 }
-
-
-
-
-
-
 
 
 /* ==========================================================================
